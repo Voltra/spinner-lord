@@ -1,6 +1,6 @@
 {
   "name": "spinner-lord",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A CSS bulk of animated spinners used for loading",
   "main": "index.js",
   "scripts": {

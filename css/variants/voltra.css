@@ -1,0 +1,53 @@
+/**@@ Styles @@**/
+/**
+*@span-amount 2
+*/
+#spinner-lord.voltra {
+	background-color: #00BCD4;
+}
+
+#spinner-lord.voltra > span:nth-child(1)::before {
+	content: "";
+    border: 1vh solid transparent;
+    border-top-color: #FFF;
+}
+
+#spinner-lord.voltra > span:nth-child(1)::before {
+	content: "";
+    border: 1vh solid transparent;
+    border-right-color: rgba(178, 235, 242, 0.58);
+    border-bottom-color: rgba(178, 235, 242, 0.28);
+    border-left-color: rgba(178, 235, 242, 0.8);
+}
+
+#spinner-lord.voltra > span:nth-child(2)::after {
+	animation: spinner-lord__ccw 0.5s linear infinite;
+}
+
+#spinner-lord.voltra > span:nth-child(2)::after {
+	content: "";
+    border: 1vh solid transparent;
+    border-left-color: #fff;
+    border-right-color: #fff;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+/**@@ Size and Positions @@**/
+#spinner-lord.voltra > span:nth-child(2) {    
+    display: block;
+	width: 4vh;
+    height: 4vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    margin: 48vh auto;
+    border-radius: 20vh;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+/**@@ Animations @@**/

@@ -1,0 +1,100 @@
+/**@@ Styles @@**/
+/**
+*@span-amount 1
+*/
+#spinner-lord {
+	background-color: #3c3f41;
+}
+
+#spinner-lord > span{
+    animation: spinner-lord__cw 1s linear infinite;
+}
+
+#spinner-lord > span:nth-child(1)::after{
+    content: "";
+    border: 1vh solid transparent;
+    border-top-color: #e9ebee;
+}
+
+#spinner-lord > span:nth-child(1)::before{
+	content: "";
+    border: 1vh solid rgba(233,235,238, 0.2);
+}
+
+#spinner-lord, #spinner-lord span {
+    transition: opacity 0.69s ease-in-out;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+/**@@ Size and Positions @@**/
+body{
+    position: relative;
+    z-index: 0;
+    height: 200vh;
+}
+
+#spinner-lord {
+	width: 100vw;
+    height: 100vh;
+    
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 999;
+    
+    overflow: hidden;
+}
+
+#spinner-lord > span{
+    display: block;
+	width: 10vh;
+    height: 10vh;
+    position: relative;
+    
+    margin: 45vh auto;
+    border-radius: 10vh;
+}
+
+#spinner-lord > span::after,
+#spinner-lord > span::before{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    
+    border-radius: 10vh;
+}
+
+#spinner-lord,
+#spinner-lord *{
+	transform-origin: center;
+    box-sizing: border-box;
+}
+
+#spinner-lord.active, #spinner-lord.active * {
+	opacity: 1;
+}
+
+#spinner-lord.inactive, #spinner-lord.inactive * {
+	opacity: 0;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+/**@@ Animations @@**/
+@keyframes spinner-lord__cw{
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
+}
+
+@keyframes spinner-lord__ccw{
+    from{ transform: rotate(360deg); }
+    to{ transform: rotate(0deg); }
+}
