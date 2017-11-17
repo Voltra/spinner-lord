@@ -1,0 +1,60 @@
+/**@@ Styles @@**/
+/**
+*@span-amount 2
+*/
+#spinner-lord.vue {
+	background-color: #41B883;
+}
+
+#spinner-lord.vue > span:nth-child(1)::after{
+    border: 0.5vh solid transparent;
+    border-color: transparent;
+}
+
+#spinner-lord.vue > span:nth-child(1)::before {
+	border: 0.5vh solid rgba(233,235,238, 0.2);
+}
+
+#spinner-lord.vue > span:nth-child(2)::after{
+    content: "";
+    border: 0.5vh solid transparent;
+    border-left-color: #35495E;
+}
+
+#spinner-lord.vue > span:nth-child(2)::before {
+	content: "";
+    border: 0.5vh solid transparent;
+    border-left-color: #35495e;
+    animation: spinner-lord__ccw 0.6s linear infinite;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+/**@@ Size and Positions @@**/
+#spinner-lord.vue > span{
+    display: block;
+	width: 8vh;
+    height: 8vh;
+    position: relative;
+    
+    margin: 44vh auto;
+    border-radius: 8vh;
+}
+
+#spinner-lord.vue > span:nth-child(2){
+	display: block;
+	width: 8vh;
+    height: 8vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    margin: 44vh auto;
+    border-radius: 8vh;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+/**@@ Animations @@**/

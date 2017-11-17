@@ -1,0 +1,75 @@
+/**@@ Styles @@**/
+/**
+*@span-amount 3
+*/
+#spinner-lord.async {
+	background-color: #41B883;
+}
+
+#spinner-lord.async > span:nth-child(1)::after{
+    border: 0.5vh solid transparent;
+    border-top-color: #35495E;
+}
+
+#spinner-lord.async > span:nth-child(1)::before {
+	border: 0 solid transparent;
+}
+
+#spinner-lord.async > span:nth-child(2)::after{
+    content: "";
+    border: 0.5vh solid transparent;
+    border-left-color: #35495E;
+}
+
+#spinner-lord.async > span:nth-child(2)::before {
+    border: 0 solid transparent;
+}
+
+#spinner-lord.async > span:nth-child(3)::after {
+	content: "";
+    border: 0.5vh solid transparent;
+    border-bottom-color: #35495E;
+}
+
+#spinner-lord.asyn > span:nth-child(3)::before {
+	border: 0 solid transparent;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+/**@@ Size and Positions @@**/
+#spinner-lord.async > span{
+    display: block;
+	width: 10vh;
+    height: 10vh;
+    position: relative;
+    
+    margin: 40vh auto;
+}
+
+#spinner-lord.async > span:nth-child(2){
+	display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    margin: 42vh auto;
+    transform: rotate(106deg);/*rotate(96deg);*/
+}
+
+#spinner-lord.async > span:nth-child(3) {
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    margin: 44vh auto;
+    transform: rotate(206deg);/*rotate(196deg);*/
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+/**@@ Animations @@**/
