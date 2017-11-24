@@ -86,6 +86,7 @@ body{
 
 #spinner-lord.inactive, #spinner-lord.inactive * {
 	opacity: 0;
+    z-index: -1;
 }
 
 /*/////////////////////////////////////////////////////////////////*/
