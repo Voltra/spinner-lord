@@ -63,7 +63,8 @@ However, the above will only display the spinner and nothing else, you might wan
 ```
 - add the "active" class dynamically upon start
 - replace the "active" class by the "inactive" class once everything is fully loaded
+- Once the transition finished, you can remove #spinner-lord from the DOM
 ```
 
-
+If you use jQuery or a jQuery-like library, the `js/removeSpinnerLord.js` file provides a function to remove it from the DOM.
 
