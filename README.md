@@ -66,5 +66,5 @@ However, the above will only display the spinner and nothing else, you might wan
 - Once the transition finished, you can remove #spinner-lord from the DOM
 ```
 
-If you use jQuery or a jQuery-like library, the `js/removeSpinnerLord.js` file provides a function to remove it from the DOM.
+If you use jQuery or a jQuery-like library, the `js/removeSpinnerLord.js` file provides a function to remove it from the DOM (as well as `js/removeSpinnerLord.es6.js` which is the es6 module version of the above).
 
