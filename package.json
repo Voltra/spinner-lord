@@ -1,11 +1,8 @@
 {
   "name": "spinner-lord",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A CSS bulk of animated spinners used for loading",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "js/removeSpinnerLord.es6.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Voltra/spinner-lord.git"
